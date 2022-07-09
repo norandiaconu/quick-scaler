@@ -1,2 +1,6 @@
 *.vbs
 *.lnk
+*.js
+/node_modules
+
+!index.js

@@ -1,0 +1,33 @@
+{
+  "name": "quick-scaler",
+  "version": "1.0.2",
+  "description": "Scripts to quickly switch between 150%/250% scaling and changing Multiple displays setting on Windows.",
+  "bin": {
+    "quick-scaler": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "up": "start Upscale.bat",
+    "down": "start Downscale.bat",
+    "laptop": "start Laptop.bat",
+    "monitor": "start Monitor.bat",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norandiaconu/QuickScaler.git"
+  },
+  "author": "Noran Diaconu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norandiaconu/QuickScaler/issues"
+  },
+  "homepage": "https://github.com/norandiaconu/QuickScaler#readme",
+  "dependencies": {
+    "sendkeys-js": "^0.0.4"
+  }
+}
