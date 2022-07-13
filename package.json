@@ -1,6 +1,6 @@
 {
   "name": "quick-scaler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scripts to quickly switch between 150%/250% scaling and changing Multiple displays setting on Windows.",
   "bin": {
     "quick-scaler": "index.js"
@@ -26,6 +26,15 @@
   "bugs": {
     "url": "https://github.com/norandiaconu/QuickScaler/issues"
   },
+  "keywords": [
+    "quick",
+    "scaler",
+    "quick-scaler",
+    "upscale",
+    "downscale",
+    "multiple",
+    "displays"
+	],
   "homepage": "https://github.com/norandiaconu/QuickScaler#readme",
   "dependencies": {
     "sendkeys-js": "^0.0.4"

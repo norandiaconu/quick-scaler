@@ -3,13 +3,11 @@
 SET TempVBSFile=%tmp%\~tmpSendKeys.vbs
 IF EXIST "%TempVBSFile%" DEL /F /Q "%TempVBSFile%"
 ECHO Set WshShell = WScript.CreateObject("WScript.Shell")     >>"%TempVBSFile%"
-ECHO WshShell.Run "explorer ms-settings:display"              >>"%TempVBSFile%"
-ECHO WScript.Sleep 2000                                       >>"%TempVBSFile%"
-ECHO WshShell.SendKeys "+{TAB 16}{ }{END}{UP}{ENTER}"         >>"%TempVBSFile%"
-ECHO WScript.Sleep 2000                                       >>"%TempVBSFile%"
-ECHO WshShell.SendKeys "+{TAB}{ENTER}"                        >>"%TempVBSFile%"
-ECHO WScript.Sleep 200                                        >>"%TempVBSFile%"
-ECHO WshShell.SendKeys "%%{F4}"                               >>"%TempVBSFile%"
+ECHO WshShell.Run "displayswitch.exe"                         >>"%TempVBSFile%"
+ECHO WScript.Sleep 900                                        >>"%TempVBSFile%"
+ECHO WshShell.SendKeys "{HOME}{ENTER}"                        >>"%TempVBSFile%"
+ECHO WScript.Sleep 900                                        >>"%TempVBSFile%"
+ECHO WshShell.SendKeys "{ESC}"                                >>"%TempVBSFile%"
 
 CSCRIPT //nologo "%TempVBSFile%"
 EXIT
