@@ -1,7 +1,7 @@
 {
   "name": "quick-scaler",
-  "version": "1.0.3",
-  "description": "Scripts to quickly switch between 150%/250% scaling and changing Multiple displays setting on Windows.",
+  "version": "1.1.0",
+  "description": "Scripts to quickly switch between 150%/250% scaling, changing Multiple displays setting, and toggling Gsync on/off on Windows.",
   "bin": {
     "quick-scaler": "index.js"
   },
@@ -14,6 +14,7 @@
     "down": "start Downscale.bat",
     "laptop": "start Laptop.bat",
     "monitor": "start Monitor.bat",
+    "gsync": "start GsyncToggle.bat",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
